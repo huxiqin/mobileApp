@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欧渠通分销官网平台-新建收货地址</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="../iconfont/iconfont.css" />		
+    <link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <style>
+	    body{background: #fff;}
+    </style>
+</head>
+<body>
+    <div class="gm-show"></div>
+    <!--顶部导航start-->
+	<div class="search-content-div clearfix">
+		<a href="javascript:history.go(-1);"><div class="fl dx-h5-logo"><i class="font-20 icon iconfont">&#xe62b;</i></div></a>
+		<div class="dz-sign-in">新增地址</div>
+    </div>
+	<!--顶部导航end-->
+    <!--地址管理start-->
+    <div class="personal-content product-content-list">
+        <!--修改收货地址start-->
+        <div class="m_myaddress"  id="gw-modify-address">   
+            <div class="item first clearfix">
+                <span class="item-label">所在地区</span>
+                <!--省份联动-->
+                <div class="selectf">
+                    <div>
+                        <select id="s_province" name="s_province" class=""></select>
+                        <select id="s_city" name="s_city"></select>
+                        <select id="s_county" name="s_county"></select>
+                    </div>
+                    <div id="show2"></div>
+                </div>
+                <!--省份联动end------>
+            </div>
+            <div class="item item-fullname clearfix">
+                <span class="item-label">收货人姓名</span>
+                <input name="fullname" class="item-input item-input-fullname ztag" type="text" placeholder="请使用真实姓名，长度不超过12个字">
+                <p class="i-error" style="display: none;"></p>
+            </div>
+            <div class="item clearfix">
+                <span class="item-label">详&nbsp;细&nbsp;地&nbsp;址&nbsp;</span>
+                <textarea name="street" class="item-textarea ztag item-gw-province" autocomplete="off" placeholder="无需重复填写省市区，小于75个字"></textarea>
+                <p class="i-error" style="display: none;"></p>
+            </div>
+            <div class="item clearfix">
+                <span class="item-label">手&nbsp;机&nbsp;号&nbsp;码&nbsp;</span>
+                <input name="mobile" class="item-input item-input-mobile zptag" type="text" autocomplete="off" placeholder="手机号码、电话号码必须填一项">
+                <p class="i-error"></p>
+            </div>
+            <div class="item-bottom clearfix">
+                <div class="default-address">
+                    <label class="m-checkbox">
+                        <span class="box">
+                            <input type="checkbox" value="1" name="newslist">
+                        </span>设为默认地址
+                    </label>
+                </div>
+            </div>
+        </div>
+        <button class="item-submit">保存新地址</button>
+        <!--修改收货地址end-->
+        </div>
+    <!--地址管理end-->
+</body>
+</html>
+<script type="text/javascript" src="../js/mui.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/personal.js"></script>
+<script class="resources library" src="../js/area.js" type="text/javascript"></script>
+<script type="text/javascript">_init_area();</script>
+<script type="text/javascript">
+       //<!--省份联动-->
+        var Gid  = document.getElementById;
+        var showArea = function(){
+	        Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +
+	        Gid('s_city').value + " - 县/区" +
+	        Gid('s_county').value + "</h3>"
+        }
+        $(function () {
+            //点击新增人信息
+            $("#receipt-address,.gm-add-address").click(function () {
+                //设初使值为空
+                $(".item-input-fullname").val("")
+                $(".item-input-mobile").val("");
+                $(".gm-show").show();
+                $("#gw-myaddress").fadeIn();
+
+            });
+            $("#dl-closed").click(function () {
+                $(".gm-show").hide();
+                $("#gw-myaddress").hide();
+            });
+            //点击修改收货人信息
+            $(".gw-zupdate").click(function () {
+                $(".gm-show").show();
+                $("#gw-myaddress").fadeIn();
+            });
+            $(".gw-step-cont ul li").click(function (index) {
+                $(this).addClass("gw-border-red").siblings().removeClass("gw-border-red");
+                $(this).find("div").addClass("gw-choose");
+                $(this).siblings().find("div").removeClass("gw-choose");
+
+            });
+            $(".gw-name-css").click(function () {
+                    $(this).addClass("gw-border-red");
+                    $(this).parent().siblings().find(".gw-name-css").removeClass("gw-border-red")
+                    $(this).find("div").addClass("gw-choose");
+                    $(this).parent().siblings().find(".gw-name-css div").removeClass("gw-choose");
+            });
+            
+        });
+    	//电话加*
+        $(function () {
+            $(".phone").each(function () {
+                var phone = $(this).text();
+                var mphone = phone.substr(0, 3) + '****' + phone.substr(7);
+                $(".phone").text(mphone)
+            });
+        });
+    
+</script>
+
+
+
+
+

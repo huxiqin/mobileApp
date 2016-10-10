@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欧渠通分销官网平台-收货地址</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../iconfont/iconfont.css" />	
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <style>
+	    body{background: #f3f3f3;}
+    </style>
+</head>
+<body>
+    <!--顶部导航start-->
+	<div class="search-content-div clearfix">
+		<a href="javascript:history.go(-1);">
+			<div class="fl dx-h5-logo">
+				<i class="icon iconfont font-20">&#xe62b;</i>
+			</div>
+		</a>
+		<div class="dz-sign-in">收货地址</div>
+    </div>
+    <!--顶部导航end-->
+    <!--有地址显示start-->
+    <div style="display: block;padding-top: 46px;"> 
+    	<!--地址1start-->
+	    <div class="address">
+	        <div class="item-addr bdb-1px">
+	            <div class="ia-m m ia-m78">
+	                <div class="mt_new">
+	                    <span id="mt-name">郑芳</span>
+	                    <strong class="phone">15122226249</strong>
+	                </div>
+	                <div class="mc">
+	                    <p>浙江杭州市余杭区闲林镇乐山红叶-天目山西路与闲富路交叉口闲富路2号12-1-1702</p>
+	                </div>
+	            </div>
+	        </div> 
+	        <div class="clearfix sh-write">
+	        	<div class="item-bottom clearfix fl sh-item-bottom" style="width: 70%;">
+	                <div class="default-address">
+	                    <label class="m-checkbox clearfix">
+	                        <span class="box fl xz-selected">
+                            	<div class="xz-unchecked">
+									<i class="fa fa-check"></i>
+                            	</div>
+	                        </span>
+	                        <span class="margin-5 fl" style="margin-top: -2px;">默认地址</span>
+	                    </label>
+	                </div>
+	            </div>
+	            <div class="fl xz-address">
+	             	<a class="ia-r" href="add-address.html">
+		                <i class="fa fa-pencil-square-o"></i>
+		            </a>
+	             </div>
+             	<div class="delete_box sh-delete_box fr">
+                    <span class="delete_up"></span>
+                    <span class="delete_down"></span>
+                </div>
+	        </div>
+	        
+	    </div>
+		<!--地址1end-->
+		<!--地址2start-->
+	    <div class="address">
+	        <div class="item-addr bdb-1px">
+	            <div class="ia-m m ia-m78">
+	                <div class="mt_new">
+	                    <span>郑芳</span>
+	                    <strong class="phone">15122226249</strong>
+	                </div>
+	                <div class="mc">
+	                    <p> 浙江杭州市余杭区闲林镇乐山红叶-天目山西路与闲富路交叉口闲富路2号12-1-1702</p>
+	                </div>
+	            </div>
+	        </div>  
+	        <div class="clearfix sh-write">
+	        	<div class="item-bottom clearfix fl sh-item-bottom" style="width: 70%;">
+	                <div class="default-address">
+	                    <label class="m-checkbox clearfix">
+	                        <span class="box fl xz-selected">
+                            	<div class="xz-unchecked">
+									<i class="fa fa-check"></i>
+                            	</div>
+	                        </span>
+	                        <span class="margin-5 fl" style="margin-top: -2px;">默认地址</span>
+	                    </label>
+	                </div>
+	            </div>
+	            <div class="fl xz-address">
+	             	<a class="ia-r" href="add-address.html">
+		                <i class="fa fa-pencil-square-o"></i>
+		            </a>
+	             </div>
+             	<div class="delete_box sh-delete_box fr">
+                    <span class="delete_up"></span>
+                    <span class="delete_down"></span>
+                </div>
+	        </div>
+	    </div>
+	    <!--确定删除弹框start-->
+	    <div class="jd_win">
+		    <div class="jd_win_box">
+		        <div class="jd_win_tit">你确定删除该商品吗？</div>
+		        <div class="jd_btn clearfix">
+		            <a href="#" class="cancle fl">取消</a>
+		            <a href="#" class="submit fr">确定</a>
+		        </div>
+		    </div>
+		</div>
+		<!--确定删除弹框end-->
+		<!--地址2end-->
+		<div class="xz-button">
+			<a href="add-address.html" target="_self">
+			    <button class="item-submit"><i class="fa fa-plus margin-right-10"></i>新建地址</button>
+		    </a>
+		</div>
+	    <!--有地址显示end-->
+    </div>
+    
+    <!--没有收货地址start-->
+    <div style="padding-top: 45%; display: none;">
+    	<div class="xz-icon">
+    		<img src="../Images/xz-icon.jpg" />
+    	</div>
+    	
+    	<p class="xz-receiving-address">您还没收货地址哦！</p>
+    	<a href="add-address.html" target="_self">
+    		<div class="xz-new-address">新建地址</div>
+    	</a>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="../js/mui.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+    //电话加*
+        $(function () {
+            $(".phone").each(function () {
+                var phone = $(this).text();
+                var mphone = phone.substr(0, 3) + '****' + phone.substr(7);
+                $(".phone").text(mphone)
+            });
+        });
+        
+        var that;
+	    $('.delete_box').on('click',function(){
+	            $(this).children('.delete_up').css(
+	                {
+	                    transition :'all 1s',
+	                    'transformOrigin':"0 5px" ,
+	                    transform :'rotate(-30deg) translateY(2px)'
+	                })
+	            $('.jd_win').show();
+	            that = $(this);
+	    });
+	    $('.cancle').on('click',function(){
+	        $('.jd_win').hide();
+	        $('.delete_up').css('transform','none')
+	    })
+	    $('.submit').on('click',function(){
+	        that.parent().parent().remove();
+	        $('.jd_win').hide();
+	    })
+	    
+	    $(".xz-selected").click(function(){
+	    	var ss=$(".xz-unchecked");
+	    	$(this).find(ss).show();
+	    	$(this).parent().parent().parent().parent().parent().siblings().find(ss).hide();
+	    	//alert();
+	    });
+	    //存入cookie
+	    var name=$("#mt-name").text();
+	    console.log(name)
+</script>
+
+
+
+
+

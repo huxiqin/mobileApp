@@ -1,0 +1,60 @@
+﻿@bili:37.5rem;
+
+@charset "UTF-8";
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed,
+	figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video{margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: middle;}
+	body,html{line-height: 1; font-family:微软雅黑;}
+	ol, ul{list-style: none;}
+	table{border-collapse: collapse; border-spacing: 0;}
+	caption, th, td{text-align: left; font-weight: normal; vertical-align: middle;}
+	q, blockquote{quotes: none;}
+	q:before, q:after, blockquote:before, blockquote:after{content: ""; content: none;}
+	a img{border: none;}
+	article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{display: block;}
+	a{text-decoration: none; color: #666;}
+	.clearfix:after{content: '.'; display: block; clear: both; height: 0; visibility: hidden;}
+	.clearfix{zoom: 1;}
+	.fl{float: left;}
+	.fr{float: right;}
+	.color{color: #B1191A;}
+	.margin-top-20{margin-top: 10px;}
+	.margin-right-10{margin-right: 10px;}
+	.margin-5{margin-left: 5px;}
+	.margin-left-10{margin-left: 10px;}
+	.font-27{font-size: 14px;color: #666;}
+	.font-12{font-size: 12px;color: #666;}
+	.font-16{font-size: 16px;}
+	.font-20{font-size: 24px !important;}
+	.sold-out{position: absolute;z-index: 1;bottom: 70px;width: 86px;left: 22%;background: #222;height: 86px;border-radius: 60%;
+				opacity: 0.7;color: #fff;line-height: 86px;text-align: center;font-size: 20px;font-weight: bold;}
+	    
+	
+	
+
+/***适配*/
+	@media screen and (min-width : 320px){html{font-size:16px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 360px){html{font-size: 18px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 375px){html{font-size: 18.75px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 384px){html{font-size: 19.2px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 412px){html{font-size: 20.6px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 414px){html{font-size: 20.7px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 480px){html{font-size: 24px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 568px){html{font-size: 28.4px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 600px){html{font-size: 30px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 640px){html{font-size:32px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 667px){html{font-size: 33.35px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 732px){html{font-size: 36.6px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 736px){html{font-size: 36.8px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 750px){html{font-size: 37.5px;}html, body {max-width: 100%;}}
+	@media screen and (min-width : 768px){html{font-size: 38.4px;}html, body {max-width: 100%;}}

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>积分充值</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/personal.css">
+		<style>
+			body{background-color:#F0F0F0;}
+		</style>
+	</head>
+	<body>
+		<div class="head_01">
+	    <a href="javascript:history.go(-1);" class="go-home" target="_self">
+			<!--<i class="fa fa-home"></i>-->
+			<i class="icon iconfont">&#xe62b;</i>
+		</a>
+		<div class="tit" >
+	      <h3>积分充值</h3>
+	    </div>
+
+	  </div>
+		<form class="pwd-margin">
+			<div class="container">
+				<!--<div class="item title">设置支付密码</div>-->
+				<div class="item pwd">会员积分：2220 分</div>
+				<div class="item pwd">会员比例：1RMB 换 10积分</div>
+				<div class="tip">
+					* 最低充值10积分，且输入的充值积分必须为10的倍数
+				</div>
+				<div class="item acount border-line"><lable>充值积分</lable><input type="text" placeholder="请输入充值积分数"/></div>
+				<div class="item pwd">
+					<lable>支付方式</lable>
+					<select class="pay-method" style="background:#fff;margin: 0;border-radius: 0;">
+						<option>--请选择付款方式--</option>
+						<option>支付宝支付</option>
+						<option>快捷支付</option>
+					</select>
+				</div>
+				<p class="red-t center-t"><label style="display:none;"> * 错误提示信息 *</label></p>
+				<div class="item login">
+					<button class="btn-submit" onclick = "location.href='../index.html'">保存</button>
+					<!--<input type="button" value="提交" class="btn-submit" onclick = "location.href='../index.html'" />-->
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

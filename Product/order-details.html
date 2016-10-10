@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欧渠通分销官网平台-提交订单</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../iconfont/iconfont.css" />	
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />	
+    <style>
+    	.address-tbl tr td{font-size: 12px;}
+    </style>
+</head>
+<body>
+    <div class="gm-show"></div>
+    <!--顶部导航start-->
+	<div class="search-content-div clearfix">
+		<a href="javascript:history.go(-1);">
+			<div class="fl dx-h5-logo">
+				<i class="icon iconfont font-20">&#xe62b;</i>
+			</div>
+		</a>
+		<div class="dz-sign-in">填写订单</div>
+    </div>
+	<!--顶部导航end-->
+    <!--地址管理start-->
+    <div class="personal-content product-content-list">
+        <div class="gm-receipt-address">
+        	<!--没有默认地址显示使用新地址start-->
+            <div class="gw-use-new-address" style="display: none;"><a href="receipt-address.html" target="_self"><i class="fa fa-plus"></i>使用新地址</a></div>
+            <!--没有默认地址显示使用新地址end-->
+            <div style="margin-bottom:18px;">
+            	<!--默认地址显示start-->
+                <div class="gw-detailed-address clearfix">
+                	<a href="receipt-address.html" target="_self">
+                        <div class="margin-30 fl gw-name-css"><div class="fl" style="margin-right: 50px;">张三</div><div class="margin-30 fl phone">15988888888</div></div>
+                        <div class="margin-30 fl gm-message">北京市 北京市 东城区 什么街道什么路2222号</div>
+                        <div class="fr gm-right">></div>
+                   </a>
+                </div>
+                <!--默认地址显示end-->
+            </div>
+        </div>
+        <!--付款方式start-->
+	    <div class="product-content-list zf-detailed-information clearfix">
+	        <div class="zf-information">支付方式:</div>
+	        <select name="ddlPayType" class="zf-payment">
+				<option value="">请选择支付方式</option>
+				<option value="0">货到付款</option>
+				<option value="1">在线支付</option>
+			</select>
+	    </div>
+	    <!--付款方式end-->
+        <!--配送信息start-->
+        <div class="gm-receipt-address" style="border-bottom:none">
+            <h3 class="zf-information">配送信息</h3>
+            <!--杭州仓-->
+            <div class="gw-warehouse">杭州仓</div>
+            <table border="1" class="address-tbl">
+                <thead>
+                    <tr class="gw-with">
+                        <th class="gw-border-right gw-background">包裹</th>
+                        <th class="gw-border-right gw-background">配送方式</th>
+                        <th class="gw-border-right gw-background">运费</th>
+                        <th class="gw-border-right gw-background">备注</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-id="450885039">
+                        <td class="gw-border-right">包裹1(查看)</td>
+                        <td class="gw-border-right">全峰快递</td>
+                        <td class="gw-border-right">￥10</td>
+                        <td class="gw-border-right">
+                            <input class="gw-item-input" type="text" placeholder="选填,可以告诉商家订单的特殊要求">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--香港仓-->
+            <div class="gw-warehouse">香港仓</div>
+            <table border="1" class="address-tbl">
+                <thead>
+                    <tr class="gw-with">
+                        <th class="gw-border-right gw-background">包裹</th>
+                        <th class="gw-border-right gw-background">配送方式</th>
+                        <th class="gw-border-right gw-background">运费</th>
+                        <th class="gw-border-right gw-background">备注</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-id="450885039">
+                        <td class="gw-border-right">包裹1(查看)</td>
+                        <td class="gw-border-right">全峰快递</td>
+                        <td class="gw-border-right">￥10</td>
+                        <td class="gw-border-right">
+                            <input class="gw-item-input" type="text" placeholder="选填,可以告诉商家订单的特殊要求">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--商品信息start-->
+        <div class="gm-receipt-address" style="border-bottom:none">
+            <h3 class="zf-information" style="height: 40px;line-height: 40px;">商品信息</h3>
+            <div class="margin-top-20"></div>
+            <!--杭州仓-->
+            <table border="1" class="address-tbl">
+                <thead>
+                    <tr>
+                        <th class="gw-background gw-width-25">包裹</th>
+                        <th class="gw-background gw-width-50">商品名称</th>
+                        <th class="gw-background gw-width-25">数量</th>
+                        <th class="gw-background gw-width-25">重量(kg)</th>
+                        <th class="gw-background gw-width-25">金额小计</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="gw-width-25">包裹1</td>
+                        <td class="gw-width-50">
+                            <div class="text-align margin-left-25 gw-text-align">鲜之优果越南红心红肉火龙果5斤装羊果350g约5-7个生鲜蔬果</div>
+                            <div class="text-align margin-left-25 margin-top-20 gw-no-reason"><i class="fa fa-refresh"></i>不支持无理由退换货</div>
+                        </td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>￥25</td>
+                    </tr>
+                    <tr>
+                        <td class="gw-width-25">包裹2</td>
+                        <td class="gw-width-50">
+                            <div class="text-align margin-left-25 gw-text-align">鲜之优果越南红心红肉火龙果5斤装羊果350g约5-7个生鲜蔬果</div>
+                            <div class="text-align margin-left-25 margin-top-20 gw-no-reason"><i class="fa fa-refresh"></i>不支持无理由退换货</div>
+                        </td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>￥25</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--商品具体信息-->
+            <div class="gw-result-information clearfix">
+                <div class="fl">
+                    <span>包裹(个):<i>3</i></span>
+                    <span>重量(kg):<i>3</i></span>
+                </div>
+                <div class="fr gw-commodity clearfix">
+                    <div class="gw-commodity-amount"><span>商品金额<em>65</em>元+运费<em>10</em>元</span></div>
+                    <div class="margin-top-20 gw-order-payment">您需为订单支付<em class="gw-total">75</em>元</div>
+                    <div class="margin-top-20 gw-specific-address"><span>张三北京市北京市东城区什么街道什么路2222号 <em class="phone">15588888888</em></span></div>
+                    <a href="payment.html" target="_self" class="clearfix">
+                        <button type="button" class="gw-place-order">提交订单</button>
+                    </a>
+                    <div style="text-align: right;margin-right: 14px;margin-top: 10px;color: #B1191A;font-size: 12px;">提交订单失败,请重新提交一次</div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!--地址管理end-->
+</body>
+</html>
+<script type="text/javascript" src="../js/mui.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+//电话加*
+$(function () {
+    $(".phone").each(function () {
+        var phone = $(this).text();
+        var mphone = phone.substr(0, 3) + '****' + phone.substr(7);
+        $(".phone").text(mphone)
+    });
+});
+    
+</script>
+
+
+
+
+

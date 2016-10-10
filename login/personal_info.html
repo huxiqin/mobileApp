@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的账户</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/personal.css">
+
+	</head>
+	<body style="background-color:#F0F0F0;">
+		<div class="head_01">
+			<a href="javascript:history.go(-1);" class="go-home" target="_self">
+				<!--<i class="fa fa-home"></i>-->
+				<i class="icon iconfont">&#xe62b;</i>
+			</a>
+			<div class="tit">
+				<h3>个人信息</h3>
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="cart">
+						<a href="#" target="_self"><i class="fa fa-shopping-cart"></i></a>
+						<span class="acount"> 10 </span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="user-info_01">
+			<p>用户ID：HA415451</p>
+			<p>用户名：李四</p>
+		</div>
+		<form class="form-info" action="">
+			<div class="container">
+				<!--<div class="item title"></div>-->
+				<div class="item pwd border-line other-tit">分销渠道信息:</div>
+				<div class="item pwd border-line"><lable>渠道类别</lable>
+					<select class="q-method" style="background:#fff;margin: 0;border-radius: 0;">
+						<option>--请选择分销渠道</option>
+						<option>淘宝</option>
+						<option>微店</option>
+						<option>实体店铺</option>
+					</select>
+				</div>
+				<div class="item pwd border-line"><lable>店铺名称 </lable><input type="text" placeholder="请输入店铺名称"/></div>
+				<div class="item pwd"><lable>其&nbsp;&nbsp;他 </lable><input type="text" placeholder="请输入其他渠道"/></div>
+				<div class="item pwd border-line other-tit">联系方式：</div>
+				<div class="item pwd border-line"><lable>邮&nbsp;&nbsp;箱 </lable><input type="text" placeholder="请输入电子邮箱"/></div>
+				<div class="item pwd border-line"><lable>微&nbsp;&nbsp;信 </lable><input type="text" placeholder="请输入微信号"/></div>
+				<div class="item pwd"><lable>&nbsp;&nbsp;QQ </lable><input type="text" placeholder="请输入QQ号码"/></div>
+				<p class="red-t center-t"><label style="display:none;"> * 错误提示信息 *</label></p>
+				<div class="item login" style="margin-top:1.5rem;">
+					
+					<!--<input type="button" value="保存" class="btn-submit" style="background:#B1191A;" onclick = "location.href='../index.html'" />-->
+					<button class="btn-submit" onclick = "location.href='../index.html'">保存</button>
+				</div>
+				<!--<div class="item other"><a href="register.html">免费注册</a><a href="forget_passwords.html">忘记密码？</a></div>-->
+			</div>
+		</form>
+
+	</body>
+</html>
